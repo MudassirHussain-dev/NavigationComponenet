@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="drawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="bottom"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drawer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drawer" />
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="viewPager"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drawer"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/btn_drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drawer" />
+
+    <Button
+        android:id="@+id/btn_transition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Transition"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drawer"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/btn_drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewpager" />
+
+    <Button
+        android:id="@+id/btn_safe_args"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="SAFE_ARGS"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drawer"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/btn_drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_transition" />
+
+    <Button
+        android:id="@+id/btn_bottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Bottom sheet"
+        app:layout_constraintEnd_toEndOf="@+id/btn_drawer"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="@+id/btn_drawer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_safe_args" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav3"
+    app:startDestination="@id/homeTranFragment">
+
+    <fragment
+        android:id="@+id/firtTranFragment"
+        android:name="dev.hmh.kotlinnavigation.transition.fragment.FirtTranFragment"
+        android:label="fragment_firt_tran"
+        tools:layout="@layout/fragment_firt_tran" >
+        <action
+            android:id="@+id/action_firtTranFragment_to_homeTranFragment"
+            app:destination="@id/homeTranFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeTranFragment"
+        android:name="dev.hmh.kotlinnavigation.transition.fragment.HomeTranFragment"
+        android:label="fragment_home_tran"
+        tools:layout="@layout/fragment_home_tran" >
+        <action
+            android:id="@+id/action_homeTranFragment_to_secondTranFragment"
+            app:destination="@id/secondTranFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_homeTranFragment_to_firtTranFragment"
+            app:destination="@id/firtTranFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTranFragment"
+        android:name="dev.hmh.kotlinnavigation.transition.fragment.SecondTranFragment"
+        android:label="fragment_second_tran"
+        tools:layout="@layout/fragment_second_tran" >
+        <action
+            android:id="@+id/action_secondTranFragment_to_homeTranFragment"
+            app:destination="@id/homeTranFragment" />
+    </fragment>
+</navigation>
